@@ -2,6 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
+struct exercícios
+{
+    /* data */
+};
 
 
 
