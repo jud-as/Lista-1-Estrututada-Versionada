@@ -26,7 +26,7 @@ int main(){
     Tipo exemplo;
     setTipo(&exemplo, 12, 'C', 1.8);
     imprimeTipo(exemplo);
-    return 0;
+    return 0; 
 }
 
 
