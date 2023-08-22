@@ -23,4 +23,5 @@ void setPessoa () {
 
 int main() {
     setPessoa();
+    return 0;
 }
