@@ -2,9 +2,11 @@
 #include <stdlib.h>
 #include <string.h>
 
-struct exercícios
+struct Pessoa
 {
-    /* data */
+    char nome[30];
+    int idade;
+    float altura;
 };
 
 
