@@ -13,7 +13,7 @@ struct ContaBancaria
 
 
 int main() {
-    int opcao, op;
+    int opcao;
     float valorSaque;
 
     printf("Nome: "); scanf("%s", &C.titular);
