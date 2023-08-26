@@ -19,30 +19,27 @@ void disPontos() {
 }
 
 void anguloReta() {
-    float catetoOposto, catetoAdjacente, angulo;
-    if (A.y < B.y)
-    {
-        C.y = A.y;
-        catetoOposto = B.y-C.y;
-    } else {
-        C.y = B.y;
-        catetoOposto = A.y-C.y;
-    }
+float catetoOposto, catetoAdjacente, anguloRad, anguloGraus;
 
-    catetoAdjacente = A.x - B.x;
-    C.x = catetoAdjacente;
-    if (catetoAdjacente < 0)
-    {
-        catetoAdjacente = catetoAdjacente*-1;
-    }
-    
-    printf("\n\nCateto Oposto: %.1f", catetoOposto);
-    printf("\nCateto Adjacente: %.1f", catetoAdjacente);
-
-    angulo = catetoOposto/catetoAdjacente;
-
-    printf("\n\nAngulo da reta: %.1f graus.", angulo*(180/3.1415));
+if (A.y < B.y) {
+    C.y = A.y;
+    catetoOposto = B.y - C.y;
+} else {
+    C.y = B.y;
+    catetoOposto = A.y - C.y;
 }
+
+catetoAdjacente = A.x - B.x;
+C.x = catetoAdjacente;
+
+anguloRad = atan2(catetoOposto, catetoAdjacente);
+anguloGraus = anguloRad * (180 / 3.1415); 
+
+printf("\n\nCateto Oposto: %.1f", catetoOposto);
+printf("\nCateto Adjacente: %.1f", catetoAdjacente);
+printf("\n\nAngulo da reta: %.1f graus.", anguloGraus);
+}
+
 
 int main() {
 
